@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,228 @@
     <title>Electrum E-commerce</title>
     <!--open sans-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
 
     <!--CSS do projeto-->
     <link rel="stylesheet" href="css/app.min.css" />
 </head>
+
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header top-container">
+                <div class="store-info-container">
+                    <span><i class="fas fa-phone">(48)99999-0000</i></span>
+                    <span><i class="far fa-envelope">electrum@email.com</i></span>
+                    <span><i class="fas fa-map-marker-alt">Rua Teste, 1234</i></span>
+                </div>
+                <div class="header-user-top-menu">
+                    <span><i class="fas fa-dollar-sign"></i><a href="#">BBL</a></span>
+                    <span><i class="fas fa-user"></i><a href="#">Minha Conta</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="main-header-container">
+                <a href="#">Electrum <i class="fas fa-bolt"></i></a>
+                <form action="" id="search-form">
+                    <input type="text" id="search" placeholder="Busque aqui">
+                    <input type="submit" class="btn btn-hasf" value="Pesquisar">
+                </form>
+                <div class="heder-actions-menu">
+                    <div class="wishlist-container">
+                        <span class="qty">0</span>
+                        <i class="far fa-heart"></i>
+                        <a href="#">Faroritos</a>
+                    </div>
+                </div>
+                <div class="heder-actions-menu">
+                    <div class="wishlist-container">
+                        <span class="qty">0</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        <a href="#">Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Notebooks</a></li>
+                    <li><a href="#">Celulares</a></li>
+                    <li><a href="#">Câmeras</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Banner-->
+    <div class="banners">
+        <div class="banner" id="banner-1">
+            <div class="banner-cover">
+                <div class="banner-content">
+                    <h2>Promoção de Notebooks</h2>
+                    <a href="#">Ver mais <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner" id="banner-2">
+            <div class="banner-cover">
+                <div class="banner-content">
+                    <h2>Lancamento de Acessórios</h2>
+                    <a href="#">Ver mais <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner" id="banner-3">
+            <div class="banner-cover">
+                <div class="banner-content">
+                    <h2>Câmeras Potentes</h2>
+                    <a href="#">Ver mais <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Products-->
+    <div class="prodcts-grid">
+        <h2>Produtos Novos</h2>
+        <div class="products-grid-container">
+            <div class="products-grid-card">
+                <span class="label new">New</span>
+                <img src="img/prod-2.jpg" alt="Produto 2">
+                <p class="category">Categoria</p>
+                <h3 class="product-name">Nome Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <buttom class="btn">Comprar</buttom>
+            </div>
+            <div class="products-grid-card">
+                <span class="label new">New</span>
+                <img src="img/prod-3.jpg" alt="Produto 3">
+                <p class="category">Categoria</p>
+                <h3 class="product-name">Nome Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <buttom class="btn">Comprar</buttom>
+            </div>
+            <div class="products-grid-card">
+                <span class="label new">New</span>
+                <img src="img/prod-4.jpg" alt="Produto 4">
+                <p class="category">Categoria</p>
+                <h3 class="product-name">Nome Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <buttom class="btn">Comprar</buttom>
+            </div>
+        </div>
+    </div>
+    <!--Deal-->>
+    <div class="deal-container">
+        <div class="deal-container-content">
+            <div class="deal-container-timer">
+                <div class="deal-container-timer">
+                    <span class="deal-container-timer-time">02</span>
+                    <span class="deal-container-timer-word">Dias</span>
+                </div>
+                <div class="deal-container-timer">
+                    <span class="deal-container-timer-time">12</span>
+                    <span class="deal-container-timer-word">Horas</span>
+                </div>
+                <div class="deal-container-timer">
+                    <span class="deal-container-timer-time">25</span>
+                    <span class="deal-container-timer-word">Minutos</span>
+                </div>
+                <div class="deal-container-timer">
+                    <span class="deal-container-timer-time">33</span>
+                    <span class="deal-container-timer-word">Segundos</span>
+                </div>
+            </div>
+            <h2 class="deal-container-content-title">Promoção de Fone Gamer</h2>
+            <p class="deal-container-content-subtitle">Toda a linha gamer com 50% de desconto</p>
+            <buttom class="btn">Comprar Agora</buttom>
+        </div>
+    </div>
+    <!--mais vendidos-->
+
+    <div class="prodcts-grid">
+        <h2>Mais Vendidos</h2>
+        <div class="products-grid-container">
+            <div class="products-grid-card">
+                <span class="label Hot">Hot</span>
+                <img src="img/prod-5.jpg" alt="Produto 2">
+                <p class="category">Categoria</p>
+                <h3 class="product-name">Nome Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <buttom class="btn">Comprar</buttom>
+            </div>
+            <div class="products-grid-card">
+                <span class="label Hot">Hot</span>
+                <img src="img/prod-6.jpg" alt="Produto 6">
+                <p class="category">Categoria</p>
+                <h3 class="product-name">Nome Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <buttom class="btn">Comprar</buttom>
+            </div>
+            <div class="products-grid-card">
+                <span class="label Hot">Hot</span>
+                <img src="img/prod-7.jpg" alt="Produto 7">
+                <p class="category">Categoria</p>
+                <h3 class="product-name">Nome Produto</h3>
+                <p class="product-price">R$ 124,90</p>
+                <div class="rating-box">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <buttom class="btn">Comprar</buttom>
+            </div>
+        </div>
+    </div>
+   
 </body>
+
 </html>
